@@ -1,0 +1,31 @@
+import React from "react";
+import {flatlist, stylesheet, view} from "react-native";
+
+export default function cesta(){
+    <flatlist>
+        data={itens.lista}
+        renderitem={item}
+        keyextractor={({nome})=> nome}
+            ListHeaderComponent={()=>{
+                return <>
+                
+                </>
+            }}
+    </flatlist>
+}
+
+const estilo = stylesheet.create({
+    titulo:{
+        color:"#464646",
+        fontWeight:"bold",
+        marginTop:32,
+        marginBottom:8,
+        fontsize:20,
+        lineheight:32,
+    
+    },
+    cesta:{
+        paddingVertical:8,
+        paddingHorizontal:16
+    }
+})
